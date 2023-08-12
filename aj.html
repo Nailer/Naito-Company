@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#FFC124"/>
+    <meta name="description" content="Exchange, sell, or buy gift cards hassle-free on our gift card exchange platform. 
+    Get the best value for your unused gift cards or find great deals on popular brands. 
+    Start trading now and make the most of your gift cards.">
+    <title>Trade with Ease</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="queries.css">
+    <script defer src="main.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="://fhttpsonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" as="style">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" as="style">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+    <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+    <script
+    type="module"
+    src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule=""
+    src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+  ></script>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html">
+          <img class="logo" alt="Pelz logo" src="./assets/logo.PNG" width="70" height="80" border-radius="20px" />
+        </a>
+  
+        <nav class="main-nav">
+          <div class="special">
+            <ul class="main-nav-li">
+              <li><a class="main-nav-link" href="#about">About Us</a></li>
+              <li><a class="main-nav-link" href="mailto:support@pelzxchange.com">Support</a></li>
+              <li><a class="main-nav-link" href="#news">Newsletter</a></li>
+            </ul>
+            <a class="main-nav-link nav-cta" href="mailto:hello@pelzxchange.com">Contact Us</a>
+          </div>
+        </nav>
+  
+        <button class="btn-mobile-nav">
+          <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+          <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+        </button>
+    </header>
+    <main>
+      <section class="section-hero">
+        <div class="hero">
+          <div class="hero-text-box">
+            <h1 class="heading-primary">
+              Trading made easier, just for you.
+            </h1>
+            <p class="hero-description">
+              Pelz Xchange is a platform that gives you best value for your gift cards and cryptos.
+            </p>
+            <a href="https://wa.link/qrc2zu" class="btn btn--full" id="margin-right-sm">Trade with us</a>
+
+            
+          </div>
+          <div class="hero-img-box">
+            <picture>
+              <!-- <source srcset="img/hero.webp" type="image/webp" />
+              <source srcset="img/hero-min.webp" type="image/png" /> -->
+
+              <img
+                src="./assets/customer.jpg"
+                class="hero-img"
+                alt="Happy customer from Giftcard exchange"
+                loading="lazy"
+                width="500%"
+                height="600%"
+              />
+            </picture>
+          </div>
+        </div>
+      </section>
+
+          
+      <section class="section-how" id="about">
+        <!-- STEP 01 -->
+        <div class="step-black">
+            <div class="container center-text ">
+                <h2 class="heading-secondary" id="white-text">
+                    Why Pelz Xchange?
+                </h2>
+            </div>
+            <div class="container grid grid--2-cols grid--center-v">
+                <div class="step-img-box">
+                    <img
+                    src="data:image/png;base64,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"
+                    class="step-img hidden"
+                    alt="Photo of happy customer"
+                    width="500%"
+                    height="600%"
+                    loading="lazy"
+                    />
+                </div>
+                <div class="step-text-box">
+                    <span class="step-number">
+                      <img src="data:image/jpeg;base64,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" alt="" class="usage">
+                    </span>
+                    <h3 class="heading-tertiary" id="white-text">
+                        Excellent, Reliable, And Trusted
+                    </h3>
+                    <p class="step-description" id="white-text">
+                        Over the years, we have been  tested and trusted by hundreds of 
+                        young individuals and we are always improving to
+                        meet the standards of our customers.
+                    </p>
+                <div class="step-btn">
+                    <a href="https://wa.link/qrc2zu" id="alternate" class="btn btn--full">Trade with PelzXchange</a>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+
+          <!-- STEP 02 -->
+          <div class="step-white">
+              <div class="container grid grid--2-cols grid--center-v">
+                  <div class="step-text-box">
+                    <span class="step-number">
+                      <img class="umbrella" src="./assets/logo.PNG" alt="">
+                    </span>
+              <h3 class="heading-tertiary">Crypto Lessons, News, And Updates</h3>
+              <p class="step-description">
+                  We offer free crypto insights, education, news and latest 
+                  updates on our social media channels regularly.
+                </p>
+                <div class="step-btn">
+                    <a href="Coming-soon.html" class="btn btn--full">Learn more</a>
+                </div>
+            </div>
+            <div class="step-img-box">
+                <img
+                src="https://media.istockphoto.com/id/1198252571/photo/euphoric-young-indian-girl-celebrate-online-victory-triumph-with-laptop.jpg?s=612x612&w=0&k=20&c=dc7HdJXHFQYrjhYpJCTq0JTsMGIbNVrZZXbY7dC0qOA="
+                class="step-img hidden"
+                alt="Photo of happy customer"
+                loading="lazy"
+                width="500%"
+                height="600%"
+                />
+            </div>
+        </div>
+    </div>
+          <!-- STEP 03 -->
+          <div class="step-black">
+              <div class="container grid grid--2-cols grid--center-v">
+                  <div class="step-img-box">
+                      <img
+                      src="https://media.istockphoto.com/id/1365436662/photo/successful-partnership.jpg?s=612x612&w=0&k=20&c=B1xspe9Q5WMsLc7Hc9clR8MWUL4bsK1MfUdDNVNR2Xg="
+                      class="step-img hidden"
+                      alt="Photo of happy customer"
+                      loading="lazy"
+                      width="500%"
+                      height="600%"
+              />
+            </div>
+            <div class="step-text-box">
+              <span class="step-number">
+                <img src="https://media.istockphoto.com/id/471348262/photo/he-loves-hanging-out-at-this-place.jpg?s=612x612&w=0&k=20&c=2kHPRtBP4885I-89XqSEtspdrV0HpOLxpYjB8J_kUYQ=" class="picker" alt="">
+              </span>
+                <h3 class="heading-tertiary" id="white-text">Good Customer Service</h3>
+                <p class="step-description" id="white-text">
+                    Our customers services provides clients with friendly and 
+                    helpful atmosphere and helps to guide clients for a better experience.
+                </p>
+                <div class="step-btn">
+                    <a href="mailto:hello@pelzxchange.com" id="alternate" class="btn btn--full">Chat us</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+      </section>
+
+      <section id="gift-cards">
+        <div class="container center-text">
+            <h2 class="heading-secondary">
+                Most Popular Gift Cards we buy
+            </h2>
+          </div>
+          <div class="gallery container">
+            <figure class="gallery-item hidden">
+              <img
+              loading="lazy"  
+                src="./assets/gift1.jpg"
+                alt="Photo of Gift Card"
+                width="50px"
+                height="200px"
+                class="lazyImg userbean"
+              />
+              <figcaption>Amazon Gift Card</figcaption>
+            </figure>
+            <figure class="gallery-item hidden">
+              <img
+                loading="lazy"
+                src="https://www.storefrontdirect.com/pub/media/catalog/product/cache/8c0cd180e440eae853fa2176b62a6ddf/v/a/vanilla_prepaid_visa.png"
+                alt="Photo of Gift Card"
+                width="75%"
+                class="userbean"
+                height="60%"
+              />
+              <figcaption>Vanila Gift Card</figcaption>
+            </figure>
+            <figure class="gallery-item hidden">
+              <img
+              loading="lazy"
+                src="https://i0.wp.com/blog.giftcardstonaira.com/posts/wp-content/uploads/2021/05/Razer-Gold-Card.png?fit=2537%2C2264&ssl=1"
+                alt="Photo of Gift Card"
+                width="75%"
+                height="60%"
+                class="userbean"
+              />
+              <figcaption>Razer Gift card</figcaption>
+            </figure>
+            <figure class="gallery-item hidden">
+              <img
+              loading="lazy"
+                src="https://read.cardtonic.com/wp-content/uploads/2023/03/Steam-Gift-card.jpg"
+                alt="Photo of Gift Card"
+                width="75%"
+                height="75%"
+                class="userbean"
+              />
+              <figcaption>Steam Gift card</figcaption>
+            </figure>
+            <figure class="gallery-item hidden">
+              <img
+              loading="lazy"
+                src="https://i0.wp.com/www.apexpay.org/posts/wp-content/uploads/2022/10/Google-play-gift-card.png?fit=900%2C733&ssl=1"
+                alt="Photo of Gift Card"
+                width="75%"
+                height="75%"
+                class="userbean"
+              />
+              <figcaption>Google play Gift card</figcaption>
+            </figure>
+            <figure class="gallery-item hidden">
+              <img
+              loading="lazy"
+                src="https://cardvest.ng/wp-content/uploads/2021/10/200-ebay-1200x1200.png"
+                alt="Photo of Gift Card"
+                width="75%"
+                height="75%"
+                class="userbean"
+              />
+              <figcaption>eBay Gift card</figcaption>
+            </figure>
+            <figure class="gallery-item hidden">
+              <img
+              loading="lazy"
+                src="https://press.nordstrom.com/system/files-encrypted/styles/nir_media_item_grid_thumbnail/encrypt/nasdaq_kms/multimedia/thumbnail/2018-09/Gift%20Card_tn.jpg?itok=25GOnfrK"
+                alt="Photo of Gift Card"
+                width="75%"
+                height="75%"
+                class="userbean"
+              />
+              <figcaption>Nordstorm Gift card</figcaption>
+            </figure>
+            <figure class="gallery-item hidden">
+              <img
+              loading="lazy"
+                src="https://prestmit.com/blog/wp-content/uploads/2023/01/61i0pyuNL._SX522_.jpg"
+                alt="Photo of Gift Card"
+                width="75%"
+                height="75%"
+                class="userbean"
+              />
+              <figcaption>Sephora Gift card</figcaption>
+            </figure>
+            <figure class="gallery-item hidden">
+              <img
+              loading="lazy"
+                src="https://dtunes.ng/blog/wp-content/uploads/2023/04/th-66.jpg"
+                alt="Photo of Gift Card"
+                width="75%"
+                height="75%"
+                class="userbean"
+              />
+              <figcaption>Visa Gift card</figcaption>
+            </figure>
+            <figure class="gallery-item hidden">
+              <img
+              loading="lazy"
+                src="https://pics.walgreens.com/prodimg/625240/900.jpg"
+                alt="Photo of Gift Card"
+                width="75%"
+                height="75%"
+                class="userbean"
+              />
+              <figcaption>Home Depot Gift card</figcaption>
+            </figure>
+            <figure class="gallery-item hidden">
+              <img
+              loading="lazy"
+                src="https://png.pngitem.com/pimgs/s/331-3313730_white-hd-png-download.png"
+                alt="Photo of Gift Card"
+                width="75%"
+                height="75%"
+                class="userbean"
+              />
+              <figcaption>Target Gift card</figcaption>
+            </figure>
+            <figure class="gallery-item hidden">
+              <img
+              loading="lazy"
+                src="https://www.giftchill.co.uk/wp-content/uploads/2021/12/walmart-giftcard-500.jpg"
+                alt="Photo of Gift Card"
+                width="75%"
+                height="75%"
+                class="userbean"
+              />
+              <figcaption>Walmart Gift card</figcaption>
+            </figure>
+            <figure class="gallery-item hidden">
+              <img
+              loading="lazy"
+                src="https://prestmit.com/blog/wp-content/uploads/2023/04/Screen-Shot-2019-03-27-at-10.11.46-AM.png"
+                alt="Photo of Gift Card"
+                width="75%"
+                height="75%"
+                class="userbean"
+              />
+              <figcaption>Macy Gift card</figcaption>
+            </figure>
+            <figure class="gallery-item hidden">
+              <img
+              loading="lazy"
+                src="https://d3dbtxes2rri5w.cloudfront.net/product/35dbac8c-162f-4c94-922a-655a1e543c56.webp"
+                alt="Photo of Gift Card"
+                width="75%"
+                height="75%"
+                class="userbean"
+              />
+              <figcaption>BNB Gift card</figcaption>
+            </figure>
+            <figure class="gallery-item hidden">
+              <img
+              loading="lazy"
+                src="https://www-konga-com-res.cloudinary.com/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/media/catalog/product/X/b/Xbox-100-Gift-Card-7859313.jpg"
+                alt="Photo of Gift Card"
+                width="75%"
+                height="75%"
+                class="userbean"
+              />
+              <figcaption>Xbox Gift card</figcaption>
+            </figure>
+          </div>
+      </section>
+
+      <section class="explore">
+        <div class="designbox-wrapper">
+          <div class="designbox">
+            <div class="step-text-box">
+              <h3 class="heading-tertiary" id="white-text">Explore the world of swift trading</h3>
+              <p class="step-description" id="white-text">
+                Exchange your gift cards and digital assets with ease. 
+                Get world class trading services from the comfort of your home.
+              </p>
+              <div class="step-btn">
+                <a href="https://wa.link/qrc2zu" id="alternate" class="btn btn--full">Trade Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+    </main>
+    
+    <section class="subscribe">
+        <div class="contain center-text">
+            <div class="sub" id="news">
+
+                <h2 class="heading-secondary" id="white-text" >
+                    Subscribe To Our Newsletter
+                </h2>
+                <p class="text-content center-text" id="white-text">Get exclusive content and discounts and be the 
+                    first to know about our new products and services.</p>
+                    <div id="custom-substack-embed"></div>
+                    <img src="/images/ellipse.svg" id="vector1" alt="">
+                   <img src="/images/triangle.svg" id="vector2" alt="">
+                   <img src="/images/triangle2.svg" id="vector3" alt="">
+            </div>
+        </div>
+        
+          <footer class="footer">
+            <div class="container grid grid--footer">
+              <div class="logo-col">
+                <a href="index.html" class="footer-logo">
+                  <img class="logo" id="ftlogo" alt="PelzXchange logo" src="./assets/altLogo.PNG" />
+                </a>       
+      
+                <p class="copyright">
+                 &copy; <span class="year">2023</span>
+                  All rights reserved <br> - Pelz Xchange
+                </p>
+              </div>
+      
+              <div class="address-col">
+                <p class="footer-heading footer-contact" id="white-text">Contact us</p>
+                <address class="contacts">
+                  <p>
+                      <a class="footer-link" href="mailto:hello@pelzxchange.com" id="yellow-text"
+                      >hello@pelzxchange.com</a
+                      >
+                      <br />
+                      <a class="footer-link" href="mailto:support@pelzxchange.com" id="yellow-text"
+                      >support@pelzxchange.com</a
+                      >
+                  </p>
+                  <ul class="social-links">
+                    <li>
+                      <a class="footer-link" href="https://instagram.com/pelzxchange_?igshid=NTc4MTIwNjQ2YQ=="
+                        ><ion-icon class="social-icon" id="white-text" name="logo-instagram"></ion-icon
+                      ></a>
+                    </li>
+                    <li>
+                      <a class="footer-link" href="https://www.facebook.com/pelzxchange?mibextid=LQQJ4d"
+                        ><ion-icon class="social-icon" id="white-text" name="logo-facebook"></ion-icon
+                      ></a>
+                    </li>
+                  </ul>
+                </address>
+              </div>
+      
+      
+              <nav class="nav-col" >
+                <p class="footer-heading" id="white-text">Company</p>
+                <ul class="footer-nav">
+                  <li><a class="footer-link" href="#about" id="white-text">About Us</a></li>
+                  <li><a class="footer-link" href="#gift" id="white-text">Gift Cards We Buy</a></li>
+                </ul>
+              </nav>
+      
+              <nav class="nav-col">
+                <p class="footer-heading" id="white-text">Products & Services</p>
+                <ul class="footer-nav">
+                  <li><a class="footer-link" href="Coming-soon.html">Blog (Coming soon) </a></li>
+                  <li><a class="footer-link" href="Coming-soon.html">Merch (Coming soon)</a></li>
+                  <li><a class="footer-link" href="Coming-soon.html">News Updates (Coming soon)</a></li>
+                </ul>
+              </nav>
+            </div>
+          </footer>
+    </section>
+    <script defer src="https://substackapi.com/widget.js"></script>
+</body>
+</html>
